@@ -50,7 +50,7 @@ class Server:
                 break
         return {
             "index": index,
-            "data": page_data,
-            "page_size": len(page_data),
             "next_index": next_index,
+            "page_size": len(page_data),
+            "data": page_data,
         }
