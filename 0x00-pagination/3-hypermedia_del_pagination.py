@@ -43,7 +43,6 @@ class Server:
         start = index if index else 0
         for i, item in data.items():
             if i >= start and counter < page_size:
-                print(i)
                 page_data.append(item)
                 counter += 1
             elif counter == page_size:
