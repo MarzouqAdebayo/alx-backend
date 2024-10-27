@@ -34,6 +34,7 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
+        """Gets paginated data using index and page size"""
         assert isinstance(index, int) and isinstance(page_size, int)
         data = self.indexed_dataset()
         assert index is not None and index >= 0 and index <= max(data.keys())
