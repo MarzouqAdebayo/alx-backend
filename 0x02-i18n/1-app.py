@@ -15,7 +15,7 @@ class Config:
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 app.config.from_object(Config)
-bable = Babel(app)
+babel = Babel(app)
 
 
 @app.route("/")
