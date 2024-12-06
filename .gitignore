@@ -1,2 +1,5 @@
 __pycache__/
 .histfile
+redis-*/
+node_modules/
+*tar.gz
